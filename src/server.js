@@ -3,7 +3,7 @@ import "dotenv/config";
 import  bodyParser from 'body-parser';
 import route from './routes/index';
 import mongoose from 'mongoose';
-const app = express();
+const app = express(); 
 
 app.use(bodyParser.json());
 app.use('/',route);
@@ -26,4 +26,7 @@ app.listen(port,()=>
     console.log(`server is running on port  ${port}`);
 });
 
-export default app
+ export default app
+
+
+ 
